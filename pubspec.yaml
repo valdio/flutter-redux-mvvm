@@ -1,5 +1,5 @@
 name: flutter_redux_mvvm
-description: A new Flutter project.
+description: Flutter-Redux-MVVM demo project.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -14,11 +14,20 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.2.2 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_redux: ^0.5.2
+  redux_persist: ^0.8.2
+  redux_persist_flutter: ^0.8.2
+  flutter_redux_dev_tools: ^0.3.0
+  validators: ^2.0.0+1
+  json_serializable: ^3.2.3
+  build_runner: ^1.7.2
+  json_annotation: ^3.0.0
+  http: ^0.12.0+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

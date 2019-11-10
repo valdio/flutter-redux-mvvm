@@ -1,16 +1,20 @@
 # flutter_redux_mvvm
 
-A new Flutter project.
+Flutter-Redux-MVVM demo project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Generating serializable models
 
-A few resources to get you started if this is your first Flutter project:
+1. Create the model following the [example](https://pub.dev/packages/json_serializable#-example-tab-) of the `json_serializable` package.
+2. Run script to project folder.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+    flutter pub run build_runner build
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If there are conflicts with the build run the following:
+
+```
+    flutter pub run build_runner build --delete-conflicting-outputs
+```
+
