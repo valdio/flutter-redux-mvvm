@@ -3,6 +3,9 @@
 Flutter-Redux-MVVM demo project.
 
 
+https://openlibrary.org/developers/api
+
+
 ## Generating serializable models
 
 1. Create the model following the [example](https://pub.dev/packages/json_serializable#-example-tab-) of the `json_serializable` package.
