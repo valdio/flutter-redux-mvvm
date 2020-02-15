@@ -22,7 +22,7 @@
       ],
       "category": {
         "id": 23457,
-        "name": "Categor Name",
+        "name": "Category Name",
         "slug": "cat-name",
         "description": "Lorem ipsum dolor sit amet.",
         "color": "#FFFFFF"
@@ -134,7 +134,7 @@
       ],
       "category": {
         "id": 23457,
-        "name": "Categor Name",
+        "name": "Category Name",
         "slug": "cat-name",
         "description": "Lorem ipsum dolor sit amet.",
         "color": "#FFFFFF"

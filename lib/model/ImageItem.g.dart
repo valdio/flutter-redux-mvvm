@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'Image.dart';
+part of 'ImageItem.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Image _$ImageFromJson(Map<String, dynamic> json) {
-  return Image(
+ImageItem _$ImageItemFromJson(Map<String, dynamic> json) {
+  return ImageItem(
     json['id'] as int,
     json['imageUrl'] as String,
     json['likes'] as int,
@@ -22,7 +22,7 @@ Image _$ImageFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$ImageToJson(Image instance) => <String, dynamic>{
+Map<String, dynamic> _$ImageItemToJson(ImageItem instance) => <String, dynamic>{
       'id': instance.id,
       'imageUrl': instance.imageUrl,
       'likes': instance.likes,

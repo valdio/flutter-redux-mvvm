@@ -2,10 +2,10 @@ import 'package:flutter_redux_mvvm/model/Category.dart';
 import 'package:flutter_redux_mvvm/model/Tag.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'Image.g.dart';
+part 'ImageItem.g.dart';
 
 @JsonSerializable()
-class Image {
+class ImageItem {
   int id;
   String imageUrl;
   int likes;
@@ -14,9 +14,9 @@ class Image {
   List<Tag> tags;
   Category category;
 
-  Image(this.id, this.imageUrl, this.likes, this.imageWidth, this.imageHeight, this.tags, this.category);
+  ImageItem(this.id, this.imageUrl, this.likes, this.imageWidth, this.imageHeight, this.tags, this.category);
 
-  factory Image.fromJson(Map<String, dynamic> json) => _$ImageFromJson(json);
+  factory ImageItem.fromJson(Map<String, dynamic> json) => _$ImageItemFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ImageToJson(this);
+  Map<String, dynamic> toJson() => _$ImageItemToJson(this);
 }
