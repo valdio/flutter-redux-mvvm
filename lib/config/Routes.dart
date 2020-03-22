@@ -21,7 +21,7 @@ Widget _buildRoute(
     Object arguments}) {
   switch (routeName) {
     case INDEX:
-      return NotFoundScreen();
+      return GalleryScreen();
     case GALLERY:
       return GalleryScreen();
 
