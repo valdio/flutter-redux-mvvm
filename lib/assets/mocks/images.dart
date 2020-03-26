@@ -1,3 +1,6 @@
+part of mocks;
+
+const imagesMock = '''
 {
   "images": [
     {
@@ -142,3 +145,4 @@
     }
   ]
 }
+''';

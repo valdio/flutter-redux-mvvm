@@ -1,12 +1,13 @@
+import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'GalleryData.g.dart';
 
 @JsonSerializable()
 class GalleryData {
-  int id;
+  List<ImageItem> galleryImages;
 
-  GalleryData({this.id});
+  GalleryData({this.galleryImages});
 
   factory GalleryData.fromJson(Map<String, dynamic> json) => _$GalleryDataFromJson(json);
 

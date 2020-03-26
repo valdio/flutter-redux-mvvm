@@ -1,4 +1,4 @@
-import 'package:flutter_redux_mvvm/redux/models/GalleryData.dart';
+import './GalleryData.dart';
 import 'package:meta/meta.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -9,13 +9,13 @@ part 'AppState.g.dart';
 class AppState {
   GalleryData galleryData;
 
-  AppState(
-      {this.galleryData});
+  AppState({this.galleryData});
 
   factory AppState.loading() => AppState();
 
   @override
   int get hashCode => galleryData.hashCode;
+
 //      placeData.hashCode ^
 //      eventData.hashCode ^
 //      searchResult.hashCode;
@@ -23,9 +23,9 @@ class AppState {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is AppState &&
-              runtimeType == other.runtimeType &&
-              galleryData == other.galleryData;
+      other is AppState &&
+          runtimeType == other.runtimeType &&
+          galleryData == other.galleryData;
 
   @override
   String toString() {
@@ -35,6 +35,4 @@ class AppState {
   Map<String, dynamic> toJson() => _$AppStateToJson(this);
 
   static AppState fromJson(dynamic json) => _$AppStateFromJson(json ?? {});
-
-
 }

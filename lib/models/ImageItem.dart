@@ -1,5 +1,5 @@
-import 'package:flutter_redux_mvvm/model/Category.dart';
-import 'package:flutter_redux_mvvm/model/Tag.dart';
+import 'package:flutter_redux_mvvm/models/Category.dart';
+import 'package:flutter_redux_mvvm/models/Tag.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'ImageItem.g.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_redux_mvvm/model/ImageItem.dart';
+import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 
 class ImageCard extends StatelessWidget {
   final ImageItem imageItem;

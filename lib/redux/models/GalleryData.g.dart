@@ -8,11 +8,14 @@ part of 'GalleryData.dart';
 
 GalleryData _$GalleryDataFromJson(Map<String, dynamic> json) {
   return GalleryData(
-    id: json['id'] as int,
+    galleryImages: (json['galleryImages'] as List)
+        ?.map((e) =>
+            e == null ? null : ImageItem.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
   );
 }
 
 Map<String, dynamic> _$GalleryDataToJson(GalleryData instance) =>
     <String, dynamic>{
-      'id': instance.id,
+      'galleryImages': instance.galleryImages,
     };
