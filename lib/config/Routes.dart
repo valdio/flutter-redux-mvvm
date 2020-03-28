@@ -1,10 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_redux_mvvm/features/gallery/GalleryScreen.dart';
+import 'package:flutter_redux_mvvm/features/image_preview/ImagePreviewScreen.dart';
 import 'package:flutter_redux_mvvm/features/notFound/NotFoundScreen.dart';
 
 //Routes
 const String INDEX = '/';
 const String GALLERY = '/gallery';
+const String IMAGE_PREVIEW = '/image_preview';
 
 Widget makeRoute(
     {@required BuildContext context,
@@ -24,20 +26,18 @@ Widget _buildRoute(
       return GalleryScreen();
     case GALLERY:
       return GalleryScreen();
-
-    //    case EVENT:
-//      String id = 'some-random-id'; //temp id
-//      String eventID = arguments ?? id;
-//
-//      return EventScreen(eventID);
-//    case PLACE:
-//      String id = '3e0de3e0-c-766a2c54bb77'; //temp id
-//      String placeID = arguments ?? id;
-//      return PlaceScreen(placeID);
-//    case SEARCH_RESULT:
-//      String searchQuery = arguments;
-//      return SearchResultScreen(searchString: searchQuery);
+    case IMAGE_PREVIEW:
+      ScreenArguments args = arguments;
+      return ImagePreviewScreen(args.identifier);
     default:
       return NotFoundScreen();
   }
+}
+
+class ScreenArguments {
+  final String identifier;
+  final String title;
+  final String content;
+
+  ScreenArguments({this.identifier, this.title, this.content});
 }

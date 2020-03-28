@@ -18,7 +18,6 @@ class GalleryScreen extends StatelessWidget {
         vm.loadImagesList();
       },
       builder: (context, vm) {
-        debugPrint(vm.galleryImages.toString());
         List<ImageItem> images = vm.galleryImages;
 
         return Scaffold(
