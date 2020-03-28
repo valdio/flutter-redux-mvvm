@@ -5,15 +5,15 @@ import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 import '../models/AppState.dart';
 import '../../assets/mocks.dart' as mocks;
 
-class GalleryViewHolder {
+class GalleryViewModel {
   final List<ImageItem> galleryImages;
   final Function(/*add type of parameters here as arguments of this method*/)
       getImagesList;
 
-  GalleryViewHolder(
+  GalleryViewModel(
       {@required this.galleryImages, @required this.getImagesList});
 
-  factory GalleryViewHolder.create(Store<AppState> store) {
+  factory GalleryViewModel.create(Store<AppState> store) {
     _onGetImagesList() async {
       // Map response = await Api.get('/gallery');
       Map response = json.decode(mocks.imagesMock);
@@ -22,7 +22,7 @@ class GalleryViewHolder {
       // store.dispatch(GalleryImagesAction(items));
     }
 
-    return GalleryViewHolder(
+    return GalleryViewModel(
       //map several parts of state to this feature view-holder
       galleryImages: store.state.galleryData?.galleryImages,
       //map actions to per performed from and to the state.

@@ -4,9 +4,7 @@ import 'config/Routes.dart';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Demo App')),
-      body: MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: (RouteSettings settings) {
           return MaterialPageRoute(
@@ -18,8 +16,6 @@ class App extends StatelessWidget {
             maintainState: true,
             fullscreenDialog: false,
           );
-        },
-      ),
-    );
+        });
   }
 }

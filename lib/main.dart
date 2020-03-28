@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_redux_mvvm/App.dart';
+import 'package:flutter_redux_mvvm/redux/config.dart';
+import 'redux/models/AppState.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: App(),
-    );
-  }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final store = await ReduxConfig().getStore();
+  runApp(StoreProvider<AppState>(store: store, child: App()));
 }
