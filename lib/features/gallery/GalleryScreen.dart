@@ -28,7 +28,6 @@ class GalleryScreen extends StatelessWidget {
             child: ListView.builder(
                 shrinkWrap: true,
                 itemCount: images.length,
-                padding: const EdgeInsets.all(20.0),
                 itemBuilder: (BuildContext context, int index) {
                   return ImageCard(images.elementAt(index));
                 }),
