@@ -10,7 +10,7 @@ class ImageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Stack(),
+      child: Text(imageItem.id.toString()),
       decoration: BoxDecoration(
         color: Colors.red,
       ),

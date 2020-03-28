@@ -1,6 +1,6 @@
 import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 
-class GalleryImagesAction {
+class GalleryImagesListAction {
   final List<ImageItem> items;
-  GalleryImagesAction(this.items);
+  GalleryImagesListAction(this.items);
 }
