@@ -11,12 +11,12 @@ class GalleryViewModel {
 
   /*add type of parameters here as arguments of this method*/
   final Function() loadImagesList;
-  final Function(String) loadImageById;
+  final Function(String) getImageById;
 
   GalleryViewModel(
       {@required this.galleryImages,
       @required this.loadImagesList,
-      @required this.loadImageById});
+      @required this.getImageById});
 
   factory GalleryViewModel.create(Store<AppState> store) {
     _onLoadImagesList() async {
@@ -28,11 +28,11 @@ class GalleryViewModel {
       store.dispatch(GalleryImagesListAction(items));
     }
 
-    _onLoadImageById(String imageUUID) async {
+    _onGetImageById(String imageUUID) {
       // Map response = await Api.get('/image?id=$imageUUID');
       Map response = json.decode(mocks.imageItem);
       ImageItem item = ImageItem.fromJson(response);
-      // TODO perform operation on #item
+      return item;
     }
 
     return GalleryViewModel(
@@ -41,7 +41,7 @@ class GalleryViewModel {
       //map actions to per performed from and to the state.
       //only create actions related to this feature.
       loadImagesList: _onLoadImagesList,
-      loadImageById: _onLoadImageById,
+      getImageById: _onGetImageById,
     );
   }
 }
