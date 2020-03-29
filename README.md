@@ -1,5 +1,7 @@
 # flutter_redux_mvvm
 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 Flutter-Redux-MVVM demo project.
 
 This is a demo project introducing an approach to structure large scale mobile applications in Flutter build on top of REDUX state management combined with MVVM (Model View ViewModel) software architecture pattern.
@@ -54,8 +56,3 @@ The demo app is structured feature-based. Trying to keep each feature encapsulat
 --/template      #Used for styling and UI related data.
 --/utils         #To store helper functions/utils (e.g. dateUtils)
 ```
-
-
-## License MIT
-
-`THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
