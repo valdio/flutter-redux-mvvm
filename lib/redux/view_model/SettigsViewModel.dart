@@ -9,12 +9,16 @@ import '../../assets/mocks.dart' as mocks;
 
 class SettingsViewModel {
   final bool darkModeOn;
+  final int randomNumber;
 
   final Function() toggleDarkMode;
+  final Function() generateRandomNumber;
 
   SettingsViewModel({
     @required this.darkModeOn,
+    @required this.randomNumber,
     @required this.toggleDarkMode,
+    @required this.generateRandomNumber,
   });
 
   factory SettingsViewModel.create(Store<AppState> store) {
@@ -22,9 +26,15 @@ class SettingsViewModel {
       store.dispatch(ToggleDarkModeAction());
     }
 
+    _onGenerateRandomNumber() {
+      store.dispatch(GenerateRandomNumberAction());
+    }
+
     return SettingsViewModel(
       darkModeOn: store.state.settingsData?.darkModeEnabled,
+      randomNumber: store.state.settingsData?.randomNumber,
       toggleDarkMode: _onToggleDarkMode,
+      generateRandomNumber: _onGenerateRandomNumber,
     );
   }
 }

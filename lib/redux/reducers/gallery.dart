@@ -7,7 +7,7 @@ final galleryReducer = combineReducers<GalleryData>([
 ]);
 
 GalleryData _getGalleryData(state, GalleryImagesListAction action) {
-  return GalleryData(
-    galleryImages: action.items,
-  );
+  GalleryData stateData = new GalleryData();
+  stateData.galleryImages = action.items;
+  return stateData;
 }

@@ -14,6 +14,8 @@ class SettingsScreen extends StatelessWidget {
         builder: (context, vm) {
           bool darkModeEnabled =
               (vm.darkModeOn == null) ? false : vm.darkModeOn;
+          String randomNumber =
+              (vm.randomNumber == null) ? ' _ ' : vm.randomNumber.toString();
 
           return Scaffold(
             appBar: AppBar(title: Text('Settings')),
@@ -38,9 +40,28 @@ class SettingsScreen extends StatelessWidget {
                       )
                     ]),
                   ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Row(children: <Widget>[
+                      Text('Random Number:',
+                          style: darkModeEnabled
+                              ? template.Typography.sectionTitleWhite
+                              : template.Typography.sectionTitle),
+                      Text(randomNumber,
+                          style: darkModeEnabled
+                              ? template.Typography.sectionTitleWhite
+                              : template.Typography.sectionTitle),
+                    ]),
+                  ),
                 ],
               ),
             ),
+            floatingActionButton: FloatingActionButton(
+                child: Icon(Icons.bubble_chart),
+                backgroundColor: Colors.green,
+                onPressed: () {
+                  vm.generateRandomNumber();
+                }),
           );
         });
   }

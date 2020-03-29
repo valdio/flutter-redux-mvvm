@@ -7,9 +7,16 @@ part 'GalleryData.g.dart';
 class GalleryData {
   List<ImageItem> galleryImages;
 
-  GalleryData({this.galleryImages});
+  factory GalleryData() {
+    return _singleton;
+  }
 
-  factory GalleryData.fromJson(Map<String, dynamic> json) => _$GalleryDataFromJson(json);
+  GalleryData._internal();
+
+  static final GalleryData _singleton = GalleryData._internal();
+
+  factory GalleryData.fromJson(Map<String, dynamic> json) =>
+      _$GalleryDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$GalleryDataToJson(this);
 }

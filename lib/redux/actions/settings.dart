@@ -4,8 +4,6 @@ class ToggleDarkModeAction {
   ToggleDarkModeAction();
 }
 
-class SetProgressPercentageAction {
-  int percentage;
-
-  SetProgressPercentageAction(this.percentage);
+class GenerateRandomNumberAction {
+  GenerateRandomNumberAction();
 }
