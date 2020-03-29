@@ -9,7 +9,7 @@ This is a demo project introducing an approach to structure large scale mobile a
 MVVMs main focus is "separation of concerns". Simply put, to separate the user interface logic from the business logic or in other words, keep the UI clean so it can be easy to manage. MVVM pattern fits nicely for data-centric applications, with apps that load data from a database (CRUD) applications. Separation of concern allows us to avoid the so-called [God Objects](https://en.wikipedia.org/wiki/God_object).
 
 ## Documentation
-The following description represents the general info about this project and how to set it up and run it. For more detailed information and explanations about the project check out the wiki in this repo.
+The following description represents the general info about this project and how to set it up and run it. For more detailed information and explanations about the project check out the [wiki on this repo](https://github.com/valdio/flutter-redux-mvvm/wiki).
 
 ### Straight into code! 🤘
 
