@@ -31,5 +31,27 @@ dependencies:
   http: ^0.12.0+2
 ```
 
-#### Note! I've upgraded the environment SDK version so we can support spread operators. If you have a more recent version than the demo you can ignore the changes!
+**Note!** I've upgraded the environment SDK version so we can support spread operators. If you have a more recent version than the demo you can ignore the changes!
+
+#### Project structure
+The demo app is structured feature-based. Trying to keep each feature encapsulated into its own module. More explanation avaliable in the wiki.
+
+```
+/lib
+--/assets
+  --/mocks
+  --/fonts
+--/components   #General use components (e.g. AppHeader, AppFooter)
+--/config       #General app config files
+--/features
+   ../feature-1
+   ../feature-2
+--/models        #Data clases 
+--/redux         #Contains the redux setup.
+  --/actions
+  --/reducers
+  --/view_model
+--/template      #Used for styling and UI related data.
+--/utils         #To store helper functions/utils (e.g. dateUtils)
+```
 
