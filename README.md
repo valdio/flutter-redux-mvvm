@@ -53,7 +53,7 @@ The demo app is structured feature-based. Trying to keep each feature encapsulat
   --/actions
   --/reducers
   --/models      # redux related models, used to mange data inside the store.
-  --/view_model
+  --/view_models
 --/template      #Used for styling and UI related data.
 --/utils         #To store helper functions/utils (e.g. dateUtils)
 ```
