@@ -3,7 +3,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_redux_mvvm/components/ImageCard.dart';
 import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 import 'package:flutter_redux_mvvm/redux/models/AppState.dart';
-import 'package:flutter_redux_mvvm/redux/view_model/GalleryViewModel.dart';
+import 'package:flutter_redux_mvvm/redux/view_models/GalleryViewModel.dart';
 import 'package:redux/redux.dart';
 import 'package:flutter_redux_mvvm/config/Routes.dart' as Routing;
 
