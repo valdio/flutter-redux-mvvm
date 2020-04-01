@@ -3,8 +3,8 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_redux_mvvm/config/Device.dart';
 import 'package:flutter_redux_mvvm/models/ImageItem.dart';
 import 'package:flutter_redux_mvvm/models/Tag.dart';
-import 'package:flutter_redux_mvvm/redux/models/AppState.dart';
-import 'package:flutter_redux_mvvm/redux/view_models/GalleryViewModel.dart';
+import 'package:flutter_redux_mvvm/store/models/AppState.dart';
+import 'package:flutter_redux_mvvm/store/view_models/GalleryViewModel.dart';
 import 'package:redux/redux.dart';
 import 'package:flutter_redux_mvvm/template/index.dart' as template;
 

@@ -1,5 +1,5 @@
 //Create the Global State reducer by combining many smaller reducers into one!
-import 'package:flutter_redux_mvvm/redux/reducers/settings.dart';
+import 'package:flutter_redux_mvvm/store/reducers/settings.dart';
 
 import '../models/AppState.dart';
 import './gallery.dart';

@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:flutter_redux_mvvm/redux/actions/gallery.dart';
-import 'package:flutter_redux_mvvm/redux/actions/index.dart';
+import 'package:flutter_redux_mvvm/store/actions/gallery.dart';
+import 'package:flutter_redux_mvvm/store/actions/index.dart';
 import 'package:redux/redux.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux_mvvm/models/ImageItem.dart';

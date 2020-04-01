@@ -1,4 +1,4 @@
-import 'package:flutter_redux_mvvm/redux/reducers/index.dart';
+import 'package:flutter_redux_mvvm/store/reducers/index.dart';
 import 'package:redux/redux.dart';
 import 'package:redux_persist/redux_persist.dart';
 import 'package:redux_persist_flutter/redux_persist_flutter.dart';

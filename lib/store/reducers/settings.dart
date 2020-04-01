@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:redux/redux.dart';
-import 'package:flutter_redux_mvvm/redux/models/SettingsData.dart';
-import 'package:flutter_redux_mvvm/redux/actions/index.dart';
+import 'package:flutter_redux_mvvm/store/models/SettingsData.dart';
+import 'package:flutter_redux_mvvm/store/actions/index.dart';
 
 final settingsReducer = combineReducers<SettingsData>([
   TypedReducer<SettingsData, ToggleDarkModeAction>(_toggleDarkMode),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:flutter_redux_mvvm/redux/models/AppState.dart';
-import 'package:flutter_redux_mvvm/redux/view_models/SettigsViewModel.dart';
+import 'package:flutter_redux_mvvm/store/models/AppState.dart';
+import 'package:flutter_redux_mvvm/store/view_models/SettigsViewModel.dart';
 import 'package:flutter_redux_mvvm/template/index.dart' as template;
 import 'package:redux/redux.dart';
 

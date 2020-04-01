@@ -1,4 +1,4 @@
-import 'package:flutter_redux_mvvm/redux/models/SettingsData.dart';
+import 'package:flutter_redux_mvvm/store/models/SettingsData.dart';
 
 import './GalleryData.dart';
 import 'package:meta/meta.dart';
