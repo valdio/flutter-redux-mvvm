@@ -4,6 +4,8 @@
 
 Flutter-Redux-MVVM demo project.
 
+https://medium.com/@valdioveliu/flutter-on-steroids-redux-mvvm-architecture-pattern-122dda63906b
+
 This is a demo project introducing an approach to structure large scale mobile applications in Flutter build on top of REDUX state management combined with MVVM (Model View ViewModel) software architecture pattern.
 
 MVVMs main focus is "separation of concerns". Simply put, to separate the user interface logic from the business logic or in other words, keep the UI clean so it can be easy to manage. MVVM pattern fits nicely for data-centric applications, with apps that load data from a database (CRUD) applications. Separation of concern allows us to avoid the so-called [God Objects](https://en.wikipedia.org/wiki/God_object).
@@ -53,7 +55,7 @@ The demo app is structured feature-based. Trying to keep each feature encapsulat
   --/actions
   --/reducers
   --/models      # redux related models, used to mange data inside the store.
-  --/view_model
+  --/view_models
 --/template      #Used for styling and UI related data.
 --/utils         #To store helper functions/utils (e.g. dateUtils)
 ```
