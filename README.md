@@ -51,7 +51,7 @@ The demo app is structured feature-based. Trying to keep each feature encapsulat
    ../feature-1
    ../feature-2
 --/models        #Data clases 
---/redux         #Contains the redux setup.
+--/store         #Contains the redux store & setup.
   --/actions
   --/reducers
   --/models      # redux related models, used to mange data inside the store.
